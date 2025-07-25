@@ -1,10 +1,10 @@
 import { Analytics } from "@vercel/analytics/react";
-import Nav from "./components/Nav";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <Nav />
+      <Navbar />
       <div className="flex flex-col gap-5 place-items-center min-h-screen self-center justify-center pb-50">
         <h1 className="text-7xl">Portfolio</h1>
         <h2 className="text-4xl">Coming Soon</h2>
