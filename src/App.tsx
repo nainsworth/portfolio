@@ -1,10 +1,11 @@
 import { Analytics } from "@vercel/analytics/react";
-import "./App.css";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <>
-      <div className="flex flex-col gap-5">
+      <Nav />
+      <div className="flex flex-col gap-5 place-items-center min-h-screen self-center justify-center pb-50">
         <h1 className="text-7xl">Portfolio</h1>
         <h2 className="text-4xl">Coming Soon</h2>
         <p className="text-xl mt-8">
@@ -18,6 +19,7 @@ function App() {
           </a>
           !
         </p>
+        
       </div>
       <Analytics />
     </>
