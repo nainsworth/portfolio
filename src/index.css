@@ -2,14 +2,26 @@
 
 @layer theme {
   :root {
-    @apply bg-gray-900 text-gray-100 text-base;
+    @apply bg-gray-900 text-gray-300 text-base;
   }
 }
 
 @layer base {
   h1 {
-    @apply text-white
-  }
-  
+    @apply text-white 
+  }  
 }
 
+
+@layer components {
+  .navLink:hover {
+    @apply text-blue-400
+  }
+  .navLink:after {
+    @apply block content-[''] border-b-2 border-b-blue-400  transform-[scaleX(0)] ease-in-out transition-transform duration-200 origin-[100%_50%]
+  }
+
+  .navLink:hover:after {
+    @apply transform-[scaleX(1)] origin-[0_50%]
+  }
+}
