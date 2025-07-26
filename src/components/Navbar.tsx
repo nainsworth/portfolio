@@ -6,7 +6,7 @@ const Navbar = () => {
 const [isOpen, setOpen] = useState(false);
 
   return (
-    <div className="w-full flex justify-between items-center mx-auto py-6 px-12 xl:w-7xl xl:px-0">
+    <div className="w-full flex justify-between items-center mx-auto py-6 px-12 xl:w-7xl xl:px-0 z-50">
       <div>
         <p className="text-xl">Portfolio Logo</p>
       </div>
@@ -23,7 +23,7 @@ const [isOpen, setOpen] = useState(false);
 
         <ul className="hidden sm:flex gap-8">
           <li>
-            <a className="navLink" href="#">
+            <a className="navLink" href="#about">
               About
             </a>
           </li>
