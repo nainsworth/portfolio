@@ -26,11 +26,23 @@ const About = () => {
         </div>
 
         <div className="text-center md:w-1/2 md:text-left">
-          <p className="inline-block bg-blue-500/10 text-blue-400 text-sm px-4 py-1 rounded-full font-medium mb-4">Web Developer</p>
-          <h1 className="text-4xl sm:text-5xl mb-5">Hi, I'm <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Nick!</span></h1>
-          <h2 className="text-xl md:text-2xl text-blue-400 font-light mb-6">Build with purpose</h2>
+          <p className="inline-block bg-blue-500/10 text-blue-400 text-sm px-4 py-1 rounded-full font-medium mb-4">
+            Web Developer
+          </p>
+          <h1 className="text-4xl sm:text-5xl mb-5">
+            Hi, I'm{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              Nick!
+            </span>
+          </h1>
+          <h2 className="text-xl md:text-2xl text-blue-400 font-light mb-6">
+            Build with purpose
+          </h2>
           <p className="max-w-lg mx-auto md:mx-0 leading-relaxed mbb-8">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quisquam minima unde qui autem, sequi commodi adipisci pariatur, dicta omnis quo error repudiandae. Laboriosam autem labore quas placeat, asperiores similique.
+            I'm a web developer with 3+ years of experience building
+            stunning, responsive, and functional web applications. I specialize
+            in font-end development with a strong understanding of React,
+            Next.JS, TailwindCSS, and TypeScript.
           </p>
         </div>
       </div>
