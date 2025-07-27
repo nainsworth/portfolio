@@ -1,5 +1,5 @@
 import { FiDownload } from "react-icons/fi";
-import headshot from "../assets/placeholder.jpeg";
+import headshot from "../assets/headshot.png";
 
 const About = () => {
   return (
@@ -27,7 +27,7 @@ const About = () => {
         </div>
 
         <div className="text-center md:w-1/2 md:text-left">
-          <p className="inline-block bg-blue-500/10 text-blue-400 text-sm px-4 py-1 rounded-full font-medium mb-4">
+          <p className="inline-block bg-blue-500/10 text-blue-400 text- px-4 py-1 rounded-full font-medium mb-4">
             Web Developer
           </p>
           <h1 className="text-4xl sm:text-5xl mb-5">
