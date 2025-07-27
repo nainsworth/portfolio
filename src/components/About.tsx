@@ -1,3 +1,4 @@
+import { FiDownload } from "react-icons/fi";
 import headshot from "../assets/placeholder.jpeg";
 
 const About = () => {
@@ -38,12 +39,30 @@ const About = () => {
           <h2 className="text-xl md:text-2xl text-blue-400 font-light mb-6">
             Build with purpose
           </h2>
-          <p className="max-w-lg mx-auto md:mx-0 leading-relaxed mbb-8">
-            I'm a web developer with 3+ years of experience building
-            stunning, responsive, and functional web applications. I specialize
-            in font-end development with a strong understanding of React,
-            Next.JS, TailwindCSS, and TypeScript.
+          <p className="max-w-lg mx-auto md:mx-0 leading-relaxed mb-8">
+            I'm a web developer with 3+ years of experience building stunning,
+            responsive, and functional web applications. I specialize in
+            font-end development with a strong understanding of React, Next.JS,
+            TailwindCSS, and TypeScript.
           </p>
+
+          <div className="container flex flex-col justify-center md:justify-start sm:flex-row gap-4">
+            <a
+              href="https://jw5qmgbbs9gk2xo5.public.blob.vercel-storage.com/resume.pdf"
+              target="_blank"
+              className="button btn-primary flex items-center justify-center gap-2"
+            >
+              <FiDownload />
+              Download Resume
+            </a>
+            <a
+              href="https://github.com/nainsworth"
+              target="_blank"
+              className="button btn-secondary flex justify-center items-center"
+            >
+              GitHub Projects
+            </a>
+          </div>
         </div>
       </div>
     </section>
