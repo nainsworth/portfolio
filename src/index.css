@@ -34,7 +34,7 @@
     @apply transform-[scaleX(1)] origin-[0_50%];
   }
   .float {
-    @apply animate-[float_6s_ease-in-out_infinite]
+    @apply animate-[float_5s_ease-in-out_infinite]
   }
 }
 
