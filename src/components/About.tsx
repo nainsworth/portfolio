@@ -1,6 +1,11 @@
+import headshot from "../assets/placeholder.jpeg";
+
 const About = () => {
   return (
-    <section id="about">
+    <section
+      id="about"
+      className="flex items-center pt-24 px-4 overflow-hidden min-h-screen"
+    >
       {/* Background Effects */}
       {/* <div className="inset-0 bg-gray-900 z-0 absolute"> */}
       <div className="z-0">
@@ -10,20 +15,24 @@ const About = () => {
         {/* <div className="inset-0 bg-grid-pattern opacity-[0.03] z-0 absolute"></div> */}
       </div>
 
-      <div className="flex flex-col gap-5 place-items-center min-h-screen self-center justify-center z-50 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-        <h1 className="text-7xl">Portfolio</h1>
-        <h2 className="text-4xl">Coming Soon</h2>
-        <p className="text-xl mt-8">
-          Meanwhile, please checkout my{" "}
-          <a
-            className="text-blue-500 hover:text-white hover:no-underline underline z-50"
-            href="https://github.com/nainsworth"
-            target="_blank"
-          >
-            github
-          </a>
-          !
-        </p>
+      <div className="container mx-auto max-w-5xl flex flex-col md:flex-row gap-12 z-10">
+        <div className="md:w-1/2 relative">
+          <div className="inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-2xl rounded-full absolute"></div>
+          <img
+            src={headshot}
+            alt="headshot"
+            className="rounded-full object-cover w-64 h-64 mx-auto border-4 border-gray-700/50 shadow-lg shadow-black/30 float relative"
+          />
+        </div>
+
+        <div className="text-center md:w-1/2 md:text-left">
+          <p className="inline-block bg-blue-500/10 text-blue-400 text-sm px-4 py-1 rounded-full font-medium mb-4">Web Developer</p>
+          <h1 className="text-4xl sm:text-5xl mb-5">Hi, I'm <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Nick!</span></h1>
+          <h2 className="text-xl md:text-2xl text-blue-400 font-light mb-6">Build with purpose</h2>
+          <p className="max-w-lg mx-auto md:mx-0 leading-relaxed mbb-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quisquam minima unde qui autem, sequi commodi adipisci pariatur, dicta omnis quo error repudiandae. Laboriosam autem labore quas placeat, asperiores similique.
+          </p>
+        </div>
       </div>
     </section>
   );

@@ -6,12 +6,12 @@ const Navbar = () => {
 const [isOpen, setOpen] = useState(false);
 
   return (
-    <div className="w-full flex justify-between items-center mx-auto py-6 px-12 xl:w-7xl xl:px-0 z-50">
+    <header className="w-full flex justify-between items-center mx-auto py-6 px-12 xl:w-7xl xl:px-0 z-50 fixed top-0 transition-all duration-300">
       <div>
         <p className="text-xl">Portfolio Logo</p>
       </div>
 
-      <div>
+      <nav>
         <div className="sm:hidden">
           <Hamburger
             toggled={isOpen}
@@ -48,8 +48,8 @@ const [isOpen, setOpen] = useState(false);
             </a>
           </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 
